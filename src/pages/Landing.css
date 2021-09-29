@@ -1,0 +1,53 @@
+.information {
+    height: fit-content;
+    background-color: rgb(240, 176, 93);
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+}
+
+.information .text {
+    width: 52%;
+    float: right;
+    color: white;
+    font-size: 1.2em;
+}
+.navbar a {
+    background-color: blueviolet;
+    text-decoration: none;
+    border-radius: 1em;
+}
+
+.landing img:not(.arrow) {
+    width: 96%;
+    border-radius: 0.25rem;
+} 
+
+@media (max-width: 768px) {
+    .information .text {
+        font-size: 1.9vmin;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .information .text {
+        font-size: 1.45vmax;
+    }
+}
+
+@media (max-width: 767px) {
+    .information .text {
+        float: none;
+        font-size: 1.6vmax;
+        width: 100%;
+        order: 2;
+    }
+    .information img {
+        width: 100%;
+    }
+    .information .slide-container {
+        order: 1;
+    }
+}
+
+

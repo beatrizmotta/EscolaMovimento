@@ -1,0 +1,239 @@
+.nav-bar {
+    font-size: 1.5rem;
+    background-color: #0e0030;
+    background-color: #523d83;
+    color: white;
+}
+.nav-bar .row {
+    justify-content: space-between;
+}
+.nav-bar span {
+    margin-bottom: 0;
+    display: flex;
+}
+.nav-bar img {
+    padding-left: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.nav-bar ul {
+    margin-right: 0;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.nav-bar li {
+    width: fit-content;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+.calendar, .week-calendar {
+    border-radius: 8px;
+    background-color: white;
+    min-width: 100px;
+    min-height: 100px;
+    font-family:'Segoe UI', sans-serif;
+}
+.week-calendar {
+    justify-self: right;
+    width: 39%; 
+}
+.space {
+    width: 1.2%;
+}
+
+.tabela {
+    width: 98%;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 59.8%;
+    padding-bottom: 12px;
+    height: fit-content;
+}
+.dashboard {
+    background-color: #9C73FB;
+    margin-top: 15px;
+    border-radius: 8px;
+    justify-content: space-evenly;
+}
+.first-row {
+    height: fit-content;
+}
+.block {
+    display: inline-block;
+    width: 12.5%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.block.lesson {
+    color: white;
+}
+
+.cal-1 p {
+    position: relative;
+    top: 10px;
+}
+
+.block:not(.days) {
+    border-right: 1px solid grey;
+}
+
+.block.filler {
+    border-right: 0;
+}
+
+
+.days, .cal-1 .filler {
+    border-bottom: 1px solid grey;
+}
+
+.cal {
+    height: 50px;
+}
+
+.classe {
+    height: 50px;
+    width: auto;
+    position: relative;
+    background-color: rgba(255, 217, 217, 0.404);
+    color: black;
+    border-radius: 7px;
+}
+
+
+
+/* Tabela Mobile */
+
+.mobile_row {
+    height: fit-content;
+}
+
+.tabela_mobile {
+    display: none;
+    padding: 5px 5px;
+    width: 98%;
+}
+.block_mobile {
+    background-color: white;
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+}
+.block_mobile:not(.days) {
+    margin: 10px 0px;
+}
+.mobile_classe { 
+    width: 98%;
+    position: relative;
+    border-radius: 7px;
+    background-color: rgba(137, 43, 226, 0.466);
+    padding: 6px 15px;
+    height: 50px;
+}
+
+.block_mobile p {
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.block_mobile:not(.days) {
+    height: 55px;
+}
+
+.block_mobile.days {
+    font-weight: bold;
+    /* border-top: 0.02em solid rgba(95, 95, 95, 0.568); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1199px) {
+    .calendar {
+        width: 64.2%;
+    }
+    .space {
+        width: 0.8%;
+    }
+    .week-calendar {
+        width: 35%;
+        justify-self: right; 
+    }
+}
+
+@media (max-width: 991px) {
+    .dashboard {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .classe {
+        font-size: 1em;
+    }
+    .calendar {
+        min-width: 100%;
+    }
+    .first-row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .week-calendar {
+        min-width: 100%;
+        margin-top: 8px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        min-width: 95%;
+    }
+}
+@media (max-width: 731px) {
+    .days {
+        font-size: 15.99px;
+    }
+    .classe {
+        font-size: 1em;
+    }
+}
+@media (max-width: 639px) {
+    .tabela {
+        display: none;
+    }
+    .tabela_mobile {
+        display: block;
+    }
+    .classe {
+        font-size: 1em;
+    }
+}
+@media (max-width: 576px) {
+    .dashboard {
+        width: 95%;
+    }
+    .classe {
+        font-size: 1em;
+    }
+}

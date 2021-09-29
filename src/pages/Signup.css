@@ -1,0 +1,29 @@
+@media (max-width: 521px) {
+    .credentials {
+        width: 300px;
+    }
+}
+@media (max-width: 575px) {
+    input[type="checkbox"] {
+        position: relative;
+        top: 18px;
+        right: 50px;
+    }
+}
+@media (min-width: 522px) and (max-width: 575px) {
+    .credentials {
+        width: 80%;
+    }
+    input[type="checkbox"] {
+        position: relative;
+        top: 18px;
+        left: -100px;
+    }
+    
+}
+input[type="checkbox"], label {
+    display: inline-block;
+}
+.checkbox_class {
+    margin-left: 10px;
+}

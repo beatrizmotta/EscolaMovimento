@@ -1,0 +1,31 @@
+.credentials {
+    background-color: rgba(255, 255, 255, 0.849);
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.credentials button {
+    border: 0;
+    background-color: rgb(54, 54, 190);
+}
+.credentials button:active {
+    background-color: rgb(45, 37, 109);
+}
+.login {
+    justify-content: center;
+}
+.logo {
+    position: absolute;
+    top: 0;
+}
+input {
+    border: lightgray 1px solid;
+}
+.credentials .goBack {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    cursor: pointer;
+}
