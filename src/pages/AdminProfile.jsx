@@ -47,7 +47,7 @@ function AdminProfile(props) {
         setPageName(e.target.value)
     }
 
-    if (auth === undefined) {
+    if (auth === undefined || auth == false) {
         return (
             <div>
                 <h1>Error 404</h1>
@@ -70,6 +70,9 @@ function AdminProfile(props) {
             </div>
             <div>
                 {page}
+            </div>
+            <div>
+                <br />
             </div>
         </div >
         )

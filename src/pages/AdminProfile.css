@@ -1,5 +1,9 @@
 li {
     display: inline-block;
+    margin-right: 7px;
+}
+ul {
+    padding: 0;
 }
 button {
     background-color: rgb(54, 54, 190);
@@ -10,6 +14,9 @@ button {
 button:active {
     background-color: rgb(45, 37, 109);
 }
+.cancel_btn:hover {
+    background-color: red;
+}
 select {
     font-size: 1.35em;
     background-color: white;
@@ -18,4 +25,24 @@ select {
 }
 .nav {
     background-color: rgb(73, 70, 90);
+}
+
+.professores table, .classes table, .alunos table {
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.professores tr:nth-child(odd), .classes tr:nth-child(odd), .alunos tr:nth-child(odd) {
+    background-color: rgb(233, 233, 233);
+}
+.admin_dashboard {
+    background-color: blueviolet;
+}
+.outlined {
+    outline: groove 0.95px rgba(34, 22, 145, 0.37);
+    background-color: rgba(26, 71, 71, 0.459);
+    color: #1f1f1f;
+}
+small {
+    pointer-events: none;
 }
