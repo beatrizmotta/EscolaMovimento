@@ -33,11 +33,8 @@ function Main(props) {
         }
     }
     function adicionar() {
-        if (id == undefined) {
-            setPopup(<h1>Please insert</h1>)
-        } else {
-            setPopup(<Adicionar type={props.entity} />)
-        }
+        setPopup(<Adicionar type={props.entity} />)
+        
     }
 
     useEffect(() => {

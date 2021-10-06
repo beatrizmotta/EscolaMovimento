@@ -18,7 +18,7 @@ function Admin(props) {
     let history = useHistory()
 
     function handleSubmit() {
-        axios.post('http://localhost:9091/21232f297a57a5a743894a0e4a801fc3-adm', {
+        axios.post('http://localhost:9091/admin/login', {
             rg: rg,
             password: password
         })

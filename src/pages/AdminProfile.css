@@ -23,6 +23,10 @@ select {
     border: 0;
     border-radius: 10px;
 }
+select .day .hour {
+    border: 1px solid black;
+    border-radius: 0;
+}
 .nav {
     background-color: rgb(73, 70, 90);
 }
